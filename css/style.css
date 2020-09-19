@@ -1,0 +1,219 @@
+/* Variables */
+
+:root {
+  --basic-white: #ffffff;
+  --black: #000000;
+  --blue-sky: #81b3d2;
+  --grey: #eeeeee;
+  --brown: #766357;
+  --white-grey: #f2f2f2;
+  --footer-white: rgba(255, 255, 255, 0.9);
+  --basic-black: #333333;
+  --rating-color: #666666;
+  --soft-black: rgba(0, 0, 0, 0.3);
+}
+
+/* Global */
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main navigation */
+.main-navigation {
+  line-height: 26px;
+  color: var(--black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-weight: 700;
+  color: var(--black);
+  background-color: var(--basic-white);
+}
+
+/* Main */
+
+.presentation {
+  background-color: var(--basic-white);
+}
+
+.tagline {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* Features */
+
+.feature-item-special {
+  color: var(--basic-white);
+  background-color: var(--blue-sky);
+}
+
+.feature-item-special h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.feature-item-picture {
+  background-color: var(--basic-white);
+}
+
+.feature-item-other {
+  background-color: var(--white-grey);
+}
+
+.feature-item-other h3 {
+  color: var(--black);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.feature-item-main {
+  background-color: var(--grey);
+}
+
+.feature-item-main h3 {
+  color: var(--black);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Order */
+
+.order {
+  background-color: var(--white-grey);
+}
+
+.order h2 {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.order-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--brown);
+}
+
+/* Map */
+
+.map {
+  background-color: var(--white-grey);
+}
+
+/* Filter */
+
+.filter {
+  color: var(--basic-white);
+  background-color: var(--brown);
+}
+
+/* Sorting */
+
+.items-sort {
+  color: var(--black);
+  background-color: var(--basic-white);
+}
+
+.sort-result {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort-title {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-list a {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--soft-black);
+}
+
+/* Catalog */
+
+.catalog {
+  background-color: var(--basic-white);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.catalog-item-rating {
+  color: var(--rating-color);
+  background-color: var(--white-grey);
+}
+
+.button-detail {
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--blue-sky);
+}
+
+.button-reservation {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--brown);
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: var(--footer-white);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.contacts-phone {
+  color: var(--black);
+}
+
+.social-list {
+  list-style: none;
+}
+
+.footer-copyright {
+  line-height: 26px;
+  color: var(--black);
+}
