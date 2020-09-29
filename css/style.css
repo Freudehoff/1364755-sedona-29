@@ -233,6 +233,13 @@ img {
   background-color: var(--basic-white);
 }
 
+.sort-wrapper {
+  padding: 30px 70px;
+  display: grid;
+  grid-template-columns: 160px 120px 1fr;
+  grid-template-rows: 30px;
+}
+
 .sort-result {
   font-size: 21px;
   line-height: 26px;
@@ -245,6 +252,8 @@ img {
 }
 
 .sort-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -269,10 +278,16 @@ img {
 }
 
 .catalog-list {
+  margin: 0;
+  padding: 0 70px;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 150px 150px;
 }
 
 .catalog-item-title {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
