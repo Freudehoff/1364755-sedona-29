@@ -232,18 +232,18 @@ img {
 
 .sort-wrapper {
   padding: 30px 70px;
-  display: grid;
-  grid-template-columns: 160px 120px 1fr;
-  grid-template-rows: 30px;
+  display: flex;
 }
 
 .sort-result {
+  width: 160px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
 .sort-title {
+  width: 120px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -278,9 +278,12 @@ img {
   margin: 0;
   padding: 0 70px;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: min-content min-content min-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 1060px;
 }
 
 .catalog-item-title {
