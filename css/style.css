@@ -26,6 +26,7 @@
 
 /* Global */
 body {
+  min-width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -33,7 +34,6 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  min-width: 1200px;
 }
 
 a {
@@ -80,6 +80,8 @@ img {
 .main-navigation {
   display: grid;
   grid-template-columns: 225px 225px 155px 225px 225px;
+  grid-template-rows: 1fr;
+  align-content: start;
   padding: 0 72px;
   line-height: 26px;
   color: var(--black);
@@ -95,7 +97,7 @@ img {
   grid-row-end: 2;
   display: grid;
   grid-template-columns: 225px 225px 155px 225px 225px;
-  grid-template-rows: 56px;
+  grid-template-rows: 1fr;
   list-style: none;
 }
 
@@ -110,12 +112,14 @@ img {
 }
 
 .item-right {
+  margin-left: auto;
   text-align: right;
 }
 
 .navigation-item a {
   display: block;
-  padding: 15px 0;
+  width: 100px;
+  margin: 15px 0;
   font-weight: 700;
   color: var(--black);
 }
@@ -234,6 +238,7 @@ img {
 .feature-item-picture {
   width: 800px;
   height: 256px;
+  object-fit: contain;
   background-color: var(--basic-white);
 }
 
@@ -319,12 +324,16 @@ img {
   line-height: 26px;
 }
 
-.title-last {
-  margin-left: 53px;
+.search-title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 92px;
+  margin-right: 14px;
 }
 
-.search-title {
-  margin-right: 14px;
+.title-last {
+  width: 45px;
+  margin: 0 10px 0 50px;
 }
 
 .search-field {
@@ -347,10 +356,6 @@ img {
 .field-age {
   width: 114px;
   height: 38px;
-}
-
-.field-special {
-  margin-left: 20px;
 }
 
 .button-search {
@@ -689,7 +694,7 @@ img {
 .catalog-item-price {
   position: absolute;
   top: 58px;
-  display: inline-block;
+  display: block;
 }
 
 .catalog-item-rating {
@@ -714,7 +719,7 @@ img {
 }
 
 .button-detail {
-  display: inline-block;
+  display: block;
   left: 234px;
   padding: 3px 16px;
   text-align: center;
@@ -789,6 +794,7 @@ img {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
   margin: 0;
