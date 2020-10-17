@@ -43,6 +43,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -135,8 +136,9 @@ img {
 /* Logo */
 
 .main-header-logo {
+  width: 155px;
   height: 56px;
-  justify-self: center;
+  text-align: center;
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -238,7 +240,6 @@ img {
 .feature-item-picture {
   width: 800px;
   height: 256px;
-  object-fit: contain;
   background-color: var(--basic-white);
 }
 
@@ -283,7 +284,8 @@ img {
 
 .order-button {
   width: 568px;
-  height: 86px;
+  min-height: 86px;
+  padding: 0 10px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -308,7 +310,6 @@ img {
   position: absolute;
   left: 315px;
   width: 568px;
-  height: 395px;
   margin: 0 auto;
   background-color: var(--basic-white);
   box-shadow: 0px 7px 15px var(--search-shadow);
@@ -359,8 +360,9 @@ img {
 }
 
 .button-search {
-  width: 458px;
-  height: 58px;
+  min-width: 458px;
+  min-height: 58px;
+  padding: 0 10px;
   margin-top: 24px;
   font-size: 21px;
   line-height: 26px;
@@ -391,15 +393,17 @@ img {
 /* Filter */
 
 .filter {
-  height: 217px;
+  min-height: 217px;
   padding: 0 70px;
   color: var(--basic-white);
   background-color: var(--brown);
   background: url("../img/filter-background.jpg") no-repeat;
+  background-size: cover;
 }
 
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -416,6 +420,12 @@ img {
 .filter-title {
   font-size: 16px;
   font-weight: 700;
+}
+
+.filter-item ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .filter-option {
@@ -453,16 +463,9 @@ img {
   user-select: none;
 }
 
-.filter-form ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .item-range {
-  position: absolute;
-  right: 10px;
-  height: 100px;
+  margin-left: auto;
+  width: 317px;
 }
 
 .range-filter {
@@ -544,8 +547,9 @@ img {
   position: absolute;
   bottom: 25px;
   right: 100px;
-  width: 137px;
-  height: 36px;
+  min-width: 137px;
+  min-height: 36px;
+  padding: 0 10px;
   border: 2px solid var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
@@ -580,6 +584,7 @@ img {
 
 .sort-title {
   width: 120px;
+  padding: 2px 0;
   font-size: 12px;
   line-height: 18px;
 }
@@ -658,8 +663,8 @@ img {
 
 .catalog-item-title {
   position: absolute;
-  left: 234px;
-  margin: 0;
+  left: 240px;
+  margin: -4px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -682,7 +687,7 @@ img {
 
 .catalog-category {
   width: 110px;
-  left: 234px;
+  left: 238px;
 }
 
 .catalog-item-price {
@@ -692,9 +697,10 @@ img {
 
 .catalog-category,
 .catalog-item-price {
+  display: block;
+  margin-bottom: 70px;
   position: absolute;
   top: 58px;
-  display: block;
 }
 
 .catalog-item-rating {
@@ -715,7 +721,7 @@ img {
 .button-detail,
 .button-reservation {
   position: absolute;
-  top: 95px;
+  bottom: 30px;
 }
 
 .button-detail {
@@ -739,7 +745,8 @@ img {
 
 .button-reservation {
   width: 142px;
-  height: 27px;
+  min-height: 27px;
+  padding: 0 10px;
   left: 352px;
   font-weight: 700;
   text-transform: uppercase;
@@ -804,6 +811,7 @@ img {
 
 .social-button {
   display: flex;
+  margin-bottom: 5px;
   align-items: center;
   justify-content: center;
   width: 46px;
