@@ -18,6 +18,7 @@
   --footer-white: rgba(255, 255, 255, 0.9);
   --basic-black: #333333;
   --rating-color: #666666;
+  --disabled: #6a6a6a;
   --soft-black: rgba(0, 0, 0, 0.3);
   --soft-white: rgba(255, 255, 255, 0.3);
   --shadow: rgba(0, 1, 1, 0.2);
@@ -131,6 +132,10 @@ img {
 
 .navigation-item a:active {
   color: var(--soft-black);
+}
+
+.site-navigation-current a {
+  color: var(--brown);
 }
 
 /* Logo */
@@ -456,6 +461,22 @@ img {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:disabled + label::before {
+  border: 2px solid var(--disabled);
+}
+
+.filter-input-checkbox:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .filter-item label {
   margin-left: 40px;
   position: relative;
@@ -618,17 +639,26 @@ img {
   border: none;
 }
 
-.sort-more {
+.sort-active a {
+  color: var(--blue-sky);
+  border: none;
+}
+
+.sort-increase {
   margin: 0 12px 0 auto;
 }
 
-.sort-more:hover path,
-.sort-less:hover path {
+.sort-increase:hover path,
+.sort-decrease:hover path {
   fill: var(--black);
 }
 
-.sort-more:active path,
-.sort-less:active path {
+.sort-increase:active path,
+.sort-decrease:active path {
+  fill: var(--blue-sky);
+}
+
+.sort-active path {
   fill: var(--blue-sky);
 }
 
