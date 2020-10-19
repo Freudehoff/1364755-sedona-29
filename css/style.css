@@ -540,6 +540,10 @@ img {
   background-position: 0 0;
 }
 
+.filter-input-checkbox:focus + label::before {
+  outline: 2px solid var(--black);
+}
+
 .filter-item label {
   margin-left: 40px;
   position: relative;
