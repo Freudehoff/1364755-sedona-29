@@ -324,6 +324,7 @@ img {
   box-shadow: 0px 7px 15px var(--search-shadow);
   animation-name: stretch;
   animation-duration: 0.5s;
+  transform-origin: top;
 }
 
 .search-hide {
@@ -463,11 +464,11 @@ img {
 
 @keyframes stretch {
   from {
-    height: 0;
+    transform: scaleY(0);
   }
 
   to {
-    height: 395px;
+    transform: scaleY(1);
   }
 }
 
