@@ -1,18 +1,18 @@
-const orderButton = document.querySelector(".order-button");
-const search = document.querySelector(".search");
-const searchForm = search.querySelector(".search-form");
-const dateIn = search.querySelector("[name=datein]");
-const dateOut = search.querySelector("[name=dateout]");
-const adult = search.querySelector("[name=adult]");
-const children = search.querySelector("[name=children]");
+const orderButtonElement = document.querySelector(".order-button");
+const searchElement = document.querySelector(".search");
+const searchFormElement = searchElement.querySelector(".search-form");
+const dateInElement = searchElement.querySelector("[name=datein]");
+const dateOutElement = searchElement.querySelector("[name=dateout]");
+const adultElement = searchElement.querySelector("[name=adult]");
+const childrenElement = searchElement.querySelector("[name=children]");
 
-orderButton.addEventListener("click", function (evt) {
+orderButtonElement.addEventListener("click", function (evt) {
   evt.preventDefault();
-  search.classList.toggle("search-hide");
+  searchElement.classList.toggle("search-hide");
 });
 
-searchForm.addEventListener("submit", function (evt) {
-  if (!dateIn.value || !dateOut.value || !adult.value || !children.value) {
+searchFormElement.addEventListener("submit", function (evt) {
+  if (!dateInElement.value || !dateOutElement.value || !adultElement.value || !childrenElement.value) {
     evt.preventDefault();
   }
 });
