@@ -102,8 +102,13 @@ img {
 }
 
 .navigation-item:nth-child(1) {
+  padding-left: 2px;
   grid-column-start: 1;
   grid-column-end: 2;
+}
+
+.navigation-item:nth-child(2) {
+  padding-left: 5px;
 }
 
 .navigation-item:nth-child(3) {
@@ -244,6 +249,10 @@ img {
 .text-wrapper {
   width: 258px;
   margin-top: 23px;
+}
+
+.text-perfect {
+  width: 265px;
 }
 
 .feature-item-picture {
@@ -504,7 +513,8 @@ img {
 }
 
 .filter-item:first-child {
-  margin-right: 115px;
+  margin-left: 2px;
+  margin-right: 120px;
 }
 
 .filter-title {
@@ -566,7 +576,7 @@ img {
   outline: 2px solid var(--black);
 }
 
-.filter-item label {
+.filter-option label {
   margin-left: 40px;
   position: relative;
   cursor: pointer;
@@ -575,6 +585,7 @@ img {
 
 .item-range {
   margin-left: auto;
+  margin-right: 2px;
   width: 317px;
 }
 
@@ -586,7 +597,7 @@ img {
 .price-controls {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 317px;
   height: 36px;
   border: 2px solid var(--basic-white);
@@ -609,14 +620,23 @@ img {
 .price-controls .line {
   width: 2px;
   height: 22px;
+  margin-right: 40px;
   background: var(--basic-white);
+}
+
+.min-price {
+  margin-left: 65px;
+}
+
+.max-price {
+  margin-right: 20px;
 }
 
 .range-controls {
   position: relative;
   width: 316px;
   height: 40px;
-  padding-top: 18px;
+  padding-top: 20px;
 }
 
 .range-controls .scale {
@@ -650,13 +670,13 @@ img {
 }
 
 .range-controls .toggle-max {
-  left: 248px;
+  left: 250px;
 }
 
 .filter-button {
   position: absolute;
   bottom: 25px;
-  right: 100px;
+  right: 98px;
   min-width: 137px;
   min-height: 36px;
   padding: 0 10px;
@@ -737,6 +757,11 @@ img {
   margin: 0 12px 0 auto;
 }
 
+.sort-increase,
+.sort-decrease {
+  align-self: center;
+}
+
 .sort-increase:hover path,
 .sort-decrease:hover path {
   fill: var(--black);
@@ -799,7 +824,7 @@ img {
 }
 
 .catalog-item-image {
-  margin: 0;
+  margin: 0 0 0 2px;
   width: 135px;
   height: 90px;
 }
@@ -825,7 +850,7 @@ img {
 .catalog-item-rating {
   position: absolute;
   top: 93px;
-  right: 70px;
+  right: 72px;
   padding: 3px 12px;
   color: var(--rating-color);
   background-color: var(--white-grey);
@@ -845,7 +870,7 @@ img {
 
 .button-detail {
   display: block;
-  left: 234px;
+  left: 237px;
   padding: 3px 16px;
   text-align: center;
   font-weight: 700;
@@ -904,7 +929,7 @@ img {
 }
 
 .contacts-text {
-  margin: 21px 0 9px;
+  margin: 19px 0 9px;
 }
 
 .contacts-phone {
@@ -987,14 +1012,14 @@ img {
 
 .copyright-text {
   line-height: 26px;
-  margin-right: 7px;
-  align-self: center;
+  margin-bottom: 5px;
 }
 
 .copyright-button {
-  display: flex;
   width: 115px;
   height: 41px;
+  margin-left: 6px;
+  margin-bottom: 10px;
 }
 
 .copyright-button:hover path {
